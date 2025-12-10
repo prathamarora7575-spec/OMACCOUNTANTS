@@ -1,0 +1,437 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OM Accountants: Reliable Tax, GST, and Accounting services in Kotkapura. Free consulting helpdesk available.">
+    <meta name="keywords" content="Accountant Kotkapura, GST Filing, ITR, TDS, Udyam Registration, Free Tax Consulting Punjab">
+    <meta name="author" content="OM Accountants">
+    <title>OM Accountants | Tax & GST Experts</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AccountingService",
+      "name": "OM Accountants",
+      "image": "image_0.png",
+      "telephone": "+917986333981",
+      "email": "prathamarora784@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Old Post Office",
+        "addressLocality": "Kotkapura",
+        "addressRegion": "Punjab",
+        "postalCode": "151204",
+        "addressCountry": "IN"
+      },
+      "priceRange": "₹₹",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    }
+    </script>
+
+    <style>
+        /* --- CSS VARIABLES --- */
+        :root {
+            --primary: #1e3a8a; /* Deep Trust Blue */
+            --secondary: #3b82f6; /* Bright Blue */
+            --accent: #f59e0b; /* Gold/Highlight */
+            --whatsapp: #25d366;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        /* --- GLOBAL RESET --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: var(--dark); background: var(--white); }
+        a { text-decoration: none; color: inherit; }
+        img { width: 100%; height: auto; display: block; border-radius: 8px; }
+        ul { list-style: none; }
+
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        .section-padding { padding: 80px 0; }
+        .bg-light { background-color: var(--light); }
+        .text-center { text-align: center; }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: var(--transition);
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .btn-primary { background: var(--primary); color: var(--white); }
+        .btn-primary:hover { background: var(--secondary); transform: translateY(-2px); }
+
+        .btn-whatsapp { background: var(--whatsapp); color: var(--white); }
+        .btn-whatsapp:hover { background: #1ebc57; transform: translateY(-2px); }
+
+        .btn-outline { border-color: var(--primary); color: var(--primary); }
+        .btn-outline:hover { background: var(--primary); color: var(--white); }
+
+        /* --- HEADER --- */
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        
+        .nav-menu { display: flex; gap: 20px; align-items: center; }
+        .nav-menu a { font-weight: 500; font-size: 0.95rem; }
+        .nav-menu a:hover { color: var(--secondary); }
+
+        /* --- HERO (Clean Split Layout) --- */
+        .hero { padding: 60px 0 80px; display: flex; align-items: center; }
+        .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        
+        .hero-text h1 { font-size: 2.8rem; line-height: 1.2; margin-bottom: 20px; color: var(--dark); }
+        .hero-text .subheadline { font-size: 1.1rem; color: #555; margin-bottom: 30px; }
+        .hero-btns { display: flex; gap: 15px; }
+        
+        .hero-img img { box-shadow: 20px 20px 0px rgba(30, 58, 138, 0.1); max-height: 500px; object-fit: cover; object-position: top; }
+
+        /* --- HELPDESK BANNER (New Feature) --- */
+        .helpdesk-banner {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: var(--white);
+            padding: 40px 0;
+            margin-top: -30px; /* Slight overlap effect */
+            border-radius: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        .helpdesk-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .helpdesk-text h3 { margin-bottom: 5px; font-size: 1.5rem; }
+        .helpdesk-text p { opacity: 0.9; }
+
+        /* --- SERVICES --- */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
+        
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            border: 1px solid #eee;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover { transform: translateY(-5px); border-color: var(--secondary); }
+
+        /* Highlight Ribbon for Popular Services */
+        .highlight::before {
+            content: "POPULAR";
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: var(--accent);
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 5px 30px;
+            transform: rotate(45deg);
+        }
+
+        .service-card h3 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
+        .service-card p { font-size: 0.9rem; color: #666; margin-bottom: 20px; }
+        
+        .wa-link { color: var(--whatsapp); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 5px; }
+        .wa-link:hover { text-decoration: underline; }
+
+        /* --- HOW IT WORKS --- */
+        .steps { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 40px; }
+        .step { flex: 1; min-width: 250px; text-align: center; }
+        .step-icon { width: 60px; height: 60px; background: var(--light); color: var(--primary); border-radius: 50%; line-height: 60px; font-size: 1.5rem; margin: 0 auto 20px; font-weight: bold; }
+
+        /* --- CONTACT & SOCIAL --- */
+        .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 40px; }
+        .contact-info { background: var(--primary); color: var(--white); padding: 40px; border-radius: 12px; }
+        
+        .info-row { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 25px; }
+        .info-row i { font-size: 1.2rem; color: var(--accent); margin-top: 5px; }
+        
+        .social-links { display: flex; gap: 15px; margin-top: 30px; }
+        .social-btn { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; color: var(--white); transition: var(--transition); }
+        .social-btn:hover { background: var(--accent); }
+
+        form input, form textarea, form select { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 6px; font-family: inherit; }
+        form button { width: 100%; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero-grid { grid-template-columns: 1fr; text-align: center; }
+            .hero-btns { justify-content: center; }
+            .nav-menu { display: none; } /* Hidden on mobile for simplicity in this demo */
+            .contact-layout { grid-template-columns: 1fr; }
+            .helpdesk-content { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">OM Accountants</div>
+                <div class="nav-menu">
+                    <a href="#services">Services</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://wa.me/917986333981" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">Call Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1>Reliable Tax, GST & Accounting Services</h1>
+                    <p class="subheadline">Expert financial solutions for your business growth. We handle the paperwork so you can focus on profits.</p>
+                    <div class="hero-btns">
+                        <a href="https://wa.me/917986333981?text=Hi%20OM%20Accountants,%20I%20want%20to%20discuss%20a%20service." class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat Now</a>
+                        <a href="#contact" class="btn btn-outline">Get Free Quote</a>
+                    </div>
+                </div>
+                <div class="hero-img">
+                    <img src="image_0.png" alt="OM Accountants - Pratham Arora">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="helpdesk-banner">
+            <div class="container helpdesk-content">
+                <div class="helpdesk-text">
+                    <h3><i class="fas fa-headset"></i> Free Consulting Helpdesk</h3>
+                    <p>Have a quick question about tax or registration? Ask us for free!</p>
+                </div>
+                <a href="https://wa.me/917986333981?text=Hi,%20I%20have%20a%20free%20consulting%20query." class="btn" style="background:white; color:var(--primary);">Message Helpdesk</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2 style="font-size: 2rem; margin-bottom: 10px;">Our Services</h2>
+                <p>Comprehensive solutions for individuals and businesses</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card highlight">
+                    <i class="fas fa-file-invoice-dollar" style="font-size:2rem; color:var(--primary); margin-bottom:15px;"></i>
+                    <h3>Income Tax Return</h3>
+                    <p>Expert ITR filing for salaried, business, and professionals.</p>
+                    <a href="https://wa.me/917986333981?text=Hi,%20I%20need%20help%20with%20Income%20Tax%20Return." class="wa-link">Discuss on WhatsApp <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card highlight">
+                    <i class="fas fa-percent" style="font-size:2rem; color:var(--primary); margin-bottom:15px;"></i>
+                    <h3>GST Returns</h3>
+                    <p>Timely monthly/quarterly GSTR-1 & 3B filing with reconciliation.</p>
+                    <a href="https://wa.me/917986333981?text=Hi,%20I%20need%20help%20with%20GST%20Returns." class="wa-link">Discuss on WhatsApp <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <h3>TDS Return Filing</h3>
+                    <p>Accurate deduction calculations and quarterly filing.</p>
+                    <a href="https://wa.me/917986333981?text=Hi,%20I%20need%20help%20with%20TDS%20Filing." class="wa-link">Discuss on WhatsApp <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Accounting</h3>
+                    <p>Complete bookkeeping and ledger maintenance services.</p>
+                    <a href="https://wa.me/917986333981?text=Hi,%20I%20need%20help%20with%20Accounting." class="wa-link">Discuss on WhatsApp <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Data Entry</h3>
+                    <p>Fast and precise data entry for your business records.</p>
+                    <a href="https://wa.me/917986333981?text=Hi,%20I%20need%20Data%20Entry%20services." class="wa-link">Discuss on WhatsApp <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Udyam Registration</h3>
+                    <p>Get your MSME license to unlock government benefits.</p>
+                    <a href="https://wa.me/917986333981?text=Hi,%20I%20need%20Udyam%20Registration." class="wa-link">Discuss on WhatsApp <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <h3>GST Registration</h3>
+                    <p>New GST Number registration for startups.</p>
+                    <a href="https://wa.me/917986333981?text=Hi,%20I%20need%20GST%20Registration." class="wa-link">Discuss on WhatsApp <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Certificates</h3>
+                    <p>Net worth, turnover, and other financial certificates.</p>
+                    <a href="https://wa.me/917986333981?text=Hi,%20I%20need%20a%20Financial%20Certificate." class="wa-link">Discuss on WhatsApp <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="hero-grid">
+                <div>
+                    <h2>How It Works</h2>
+                    <p>Simple 3-step process to get your work done.</p>
+                    <br>
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color:var(--primary)">1. Contact Us</h4>
+                        <p style="font-size:0.9rem;">Send a message via WhatsApp or use the form.</p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color:var(--primary)">2. Send Documents</h4>
+                        <p style="font-size:0.9rem;">Send photos/PDFs of required docs digitally.</p>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color:var(--primary)">3. Work Done</h4>
+                        <p style="font-size:0.9rem;">We file the return and send you the receipt.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800" alt="Process Planning">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2>Transparent Pricing</h2>
+                <p style="margin-bottom: 40px;">Affordable starter ranges</p>
+            </div>
+            <div class="steps"> <div class="service-card text-center" style="border-top: 5px solid var(--primary);">
+                    <h4>Consultation</h4>
+                    <h2 style="color:var(--primary); margin: 15px 0;">Free</h2>
+                    <p>Initial discussion & Advice</p>
+                    <a href="https://wa.me/917986333981" class="btn btn-outline" style="margin-top:15px;">Ask Now</a>
+                </div>
+                <div class="service-card text-center" style="border-top: 5px solid var(--accent); transform: scale(1.05);">
+                    <h4>Filing Services</h4>
+                    <h2 style="color:var(--primary); margin: 15px 0;">₹500+</h2>
+                    <p>Starting price for Returns</p>
+                    <a href="#contact" class="btn btn-primary" style="margin-top:15px;">Get Quote</a>
+                </div>
+                <div class="service-card text-center" style="border-top: 5px solid var(--primary);">
+                    <h4>Registrations</h4>
+                    <h2 style="color:var(--primary); margin: 15px 0;">₹1000+</h2>
+                    <p>GST / Udyam Setup</p>
+                    <a href="#contact" class="btn btn-outline" style="margin-top:15px;">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2>Contact Us</h2>
+                <p>We are available on WhatsApp, Email, and Social Media</p>
+            </div>
+            
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="info-row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Old Post Office, Kotkapura,<br>State Punjab, Pin 151204</p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+917986333981">+91 79863 33981</a></p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:prathamarora784@gmail.com">prathamarora784@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Services Schedule</h4>
+                            <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+
+                    <hr style="border-color: rgba(255,255,255,0.2); margin: 20px 0;">
+                    
+                    <h4>Follow Us:</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/917986333981" class="social-btn" style="background: var(--whatsapp);"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <form action="mailto:prathamarora784@gmail.com" method="post" enctype="text/plain" style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                    <h3>Send a Message</h3>
+                    <br>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                    <select name="service">
+                        <option value="">Select Service</option>
+                        <option value="Income Tax">Income Tax</option>
+                        <option value="GST">GST</option>
+                        <option value="Accounting">Accounting</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                    <p style="font-size: 0.8rem; color: #999; margin-top: 10px;">*This launches your email app.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: #111; color: #888; padding: 40px 0; text-align: center; font-size: 0.9rem;">
+        <div class="container">
+            <p style="color: white; font-weight: bold; font-size: 1.2rem; margin-bottom: 10px;">OM Accountants</p>
+            <p>Old Post Office, Kotkapura, Punjab 151204</p>
+            <div style="margin: 20px 0; display: flex; justify-content: center; gap: 15px;">
+                <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: white;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: white;"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2025 OM Accountants. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
